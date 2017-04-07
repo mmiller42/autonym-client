@@ -1,0 +1,40 @@
+{
+  "name": "autonym-client",
+  "version": "0.0.0",
+  "description": "A JavaScript client for consuming Autonym APIs.",
+  "main": "lib/index.js",
+  "scripts": {
+    "build:dist": "webpack",
+    "build:lib": "babel src --out-dir lib",
+    "build": "npm run build:lib && npm run build:dist",
+    "lint": "eslint src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmiller42/autonym-client.git"
+  },
+  "author": "Matt Miller <me@mmiller.me> (https://mmiller.me/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CodeColaLLC/autonym-client/issues"
+  },
+  "homepage": "https://github.com/mmiller42/autonym-client#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.0",
+    "babel-eslint": "^7.2.1",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.2.2",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "webpack": "^2.3.2"
+  },
+  "dependencies": {
+    "axios": "^0.16.0",
+    "qs": "^6.4.0"
+  }
+}
